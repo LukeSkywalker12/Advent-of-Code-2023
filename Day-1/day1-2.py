@@ -1,4 +1,4 @@
-input = open("Day-1/list.txt", "r")
+input = open("Day-1/input.txt", "r")
 
 gesamt = 0
 
@@ -21,7 +21,7 @@ def findZahl1(line):
     return returnNumber
 
 def findZahl2(line):
-    index = 0
+    index = -1
     returnNumber = "0"
 
     for number in numbers:
@@ -36,14 +36,10 @@ def findZahl2(line):
     
     return returnNumber
     
-count = 0
 
 for line in input:
-    print("Linie: ", line)
     zahl = findZahl1(line) + findZahl2(line)
-    print("Zahl: ", zahl)
     gesamt += int(zahl)
-    count+=1
+
 
 print(gesamt)
-print(count)

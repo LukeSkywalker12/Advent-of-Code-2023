@@ -1,4 +1,4 @@
-input = open("Day-1/list.txt", "r")         # Liest die Liste ein
+input = open("Day-1/input.txt", "r")         # Liest die Liste ein
 
 gesamt = 0
 

@@ -30,9 +30,6 @@ for line in document:
     maxGreen = findMaxValue(line, "green")
     maxBlue = findMaxValue(line, "blue")
 
-    # print(line)
-    # print("red: ", maxRed, "green: ", maxGreen, "blue: ", maxBlue)
-
     if maxRed <= 12 and maxGreen <= 13 and maxBlue <= 14:
         addedIDs += countID
     
